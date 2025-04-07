@@ -21,7 +21,6 @@
 
 class Card {
 public:
-  // Card ();
   Card (const std::string& rcSuit, const std::string& rcDenomination);
   Card (const Card& rcCard);
   virtual ~Card ();
