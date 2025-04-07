@@ -16,10 +16,18 @@ add_subdirectory(googletest)
 
 set (Headers
     include/SampleClass.h
+    include/Card.h
+    include/Hand.h
+    include/InBetweenHand.h
+    include/Deck.h
 )
 
 set (Sources
     src/SampleClass.cpp
+    src/Card.cpp
+    src/Hand.cpp
+    src/InBetweenHand.cpp
+    src/Deck.cpp
 )
 
 add_library(${This} STATIC ${Sources} ${Headers})
