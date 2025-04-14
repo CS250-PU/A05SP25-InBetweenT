@@ -10,8 +10,7 @@
 
 #include <ostream>
 #include <vector>
-#include "../include/Deck.h"
-#include "../include/Card.h"
+#include "Card.h"
 
 class Deck {
 public:
@@ -23,7 +22,6 @@ public:
   size_t size () const;
   void shuffle ();
   void clear ();
-  // void write (std::ostream& rcOut) const;
   friend std::ostream& operator<< (std::ostream& rcOutStream,
     const Deck& rcDeck);
 
